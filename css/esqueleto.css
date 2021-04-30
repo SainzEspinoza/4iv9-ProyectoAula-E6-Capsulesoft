@@ -57,8 +57,7 @@ nav{
 nav div{    
     align-items: center;
     display: flex;    
-    justify-content: center; 
-           
+    justify-content: center;     
 }
 
 nav div:hover{
