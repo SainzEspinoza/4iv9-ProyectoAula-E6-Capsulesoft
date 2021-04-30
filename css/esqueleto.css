@@ -5,8 +5,17 @@ AQUI SERÁ EL ESQUELETO QUE SERÁ TODO EL CSS QUE TENGAN EN COMUN LOS WIREFRAMES
     margin: 0;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;        
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 a{
@@ -14,13 +23,15 @@ a{
     text-decoration: none;
 }
 
-header div{        
-    margin 0px;
+div.barra{
     width: 100%;
     height: 45px;
     background-color: #636e72;    
     display: grid;
     grid-template-columns: 1fr 1fr;    
+    position: sticky;
+    top: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 div img{
@@ -45,3 +56,22 @@ nav div:hover{
     transition: ease-in-out 0.5s;     
 }
 
+.principal{
+    width: 70%;
+    height: 100vh;    
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+footer{
+    background-color: #2d3436;
+    color: #dfe6e9;    
+}
+
+footer table{
+    border-spacing: 10px;
+    font-family: 'Nunito', sans-serif;
+}
