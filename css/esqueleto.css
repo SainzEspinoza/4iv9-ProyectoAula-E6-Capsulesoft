@@ -78,9 +78,38 @@ nav div:hover{
     margin-right: 15%;    
 }
 
+h2{
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 1px 5px gray;    
+}
+
+p{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 .quienes div{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;    
+}
+
+.quienes img:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.2);
+}
+
+.acerca{    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 2em;
+}
+
+.acerca h2{
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 1px 5px gray;
+}
+
+.acerca p{
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 footer{
@@ -91,4 +120,10 @@ footer{
 footer table{
     border-spacing: 10px;
     font-family: 'Nunito', sans-serif;
+}
+
+.clientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3em;
 }
