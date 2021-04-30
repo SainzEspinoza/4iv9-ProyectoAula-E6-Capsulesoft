@@ -57,6 +57,7 @@ nav{
     
 }
 
+
 nav div{    
     align-items: center;
     display: flex;    
@@ -74,8 +75,12 @@ nav div:hover{
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 15%;
-    margin-right: 15%;
-    
+    margin-right: 15%;    
+}
+
+.quienes div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer{
