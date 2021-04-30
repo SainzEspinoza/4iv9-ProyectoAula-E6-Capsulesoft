@@ -25,6 +25,9 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    background-attachment: fixed;
+    
 }
 
 a{
@@ -41,7 +44,7 @@ div.barra{
     position: sticky;
     top: 0;
     font-family: 'Open Sans', sans-serif;
-    
+    overflow: hidden;    
 }
 
 .barra img{
@@ -52,6 +55,7 @@ div.barra{
 nav{    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;    
+    
 }
 
 nav div{    
