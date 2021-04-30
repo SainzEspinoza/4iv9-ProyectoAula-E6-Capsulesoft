@@ -20,11 +20,14 @@ body{
 
 .portada{
     background-image: url(../imgs/CapsuleSoft.jpg);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    background-attachment: fixed;
+    
 }
 
 a{
@@ -37,27 +40,28 @@ div.barra{
     height: 45px;
     background-color: #636e72;    
     display: grid;
-    grid-template-columns: 1fr 1fr;    
-    position: sticky;
-    top: 0;
+    grid-template-columns: 1fr 1fr;
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;    
+    box-shadow: 0px -3px 7px #2d3436;
 }
 
-div img{
-    height: 45px;
+.barra img{
+    height: 45px;   
     margin-left: 25px;
 }
 
 nav{    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;    
+    
 }
+
 
 nav div{    
     align-items: center;
     display: flex;    
-    justify-content: center; 
-           
+    justify-content: center;     
 }
 
 nav div:hover{
@@ -71,8 +75,12 @@ nav div:hover{
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 15%;
-    margin-right: 15%;
-    
+    margin-right: 15%;    
+}
+
+.quienes div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer{
