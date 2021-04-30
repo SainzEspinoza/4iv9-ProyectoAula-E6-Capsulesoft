@@ -20,7 +20,7 @@ body{
 
 .portada{
     background-image: url(../imgs/CapsuleSoft.jpg);
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,10 +41,11 @@ div.barra{
     position: sticky;
     top: 0;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
-div img{
-    height: 45px;
+.barra img{
+    height: 45px;   
     margin-left: 25px;
 }
 
