@@ -82,9 +82,10 @@ nav div:hover{
     margin-right: 15%;    
 }
 
-h2{
+h2, h4{
     font-family: 'Raleway', sans-serif;
     text-shadow: 2px 1px 5px gray;    
+    margin: 0;
 }
 
 p{
@@ -146,5 +147,84 @@ footer table{
     box-shadow: 0 18px 15px rgba(0, 0, 0, 0.2);        
 }
 
+.registro{
+    width: 320px;
+    height: 420px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.registro img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.registro form{
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.registro h4{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.registro label{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.registro input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.registro input[type="text"],
+.registro input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #636e72;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #2d3436;
+    font-size: 15px;
+}
+
+.registro input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #a29bfe;
+    color: #2d3436;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.registro input[type="submit"]:hover{
+    background: #6c5ce7;
+    color: #fff;
+    
+}
+
+.registro a{
+    color: #2d3436;
+    font-size: 12px;
+    line-height: 20px;
+    transition: all 0.3s;
+}
+
+.registro a:hover{
+    color: #636e72;
+}
 
 
