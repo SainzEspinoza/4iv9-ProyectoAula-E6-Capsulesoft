@@ -1,4 +1,4 @@
-AQUI SERÁ EL ESQUELETO QUE SERÁ TODO EL CSS QUE TENGAN EN COMUN LOS WIREFRAMES
+
 
 *{
     padding: 0;
@@ -27,6 +27,8 @@ body{
     background-size: cover;
 
     background-attachment: fixed;
+
+    
     
 }
 
@@ -35,7 +37,7 @@ a{
     text-decoration: none;
 }
 
-div.barra{
+.barra{
     width: 100%;
     height: 45px;
     background-color: #636e72;    
@@ -43,7 +45,9 @@ div.barra{
     grid-template-columns: 1fr 1fr;
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;    
-    box-shadow: 0px -3px 7px #2d3436;
+    box-shadow: 0px -3px 8px #2d3436;
+    position: sticky;
+    top: 0;
 }
 
 .barra img{
@@ -61,12 +65,12 @@ nav{
 nav div{    
     align-items: center;
     display: flex;    
-    justify-content: center;     
+    justify-content: center;  
+    transition: all 0.5s;     
 }
 
 nav div:hover{
-    background-color: #b2bec3;
-    transition: ease-in-out 0.5s;     
+    background-color: #b2bec3;    
 }
 
 .principal{
@@ -92,8 +96,11 @@ p{
     grid-template-columns: 1fr 1fr;    
 }
 
-.quienes img:hover{
-    transition: ease-in-out 0.2s;
+.quienes img{
+    transition: all 0.2s;
+}
+
+.quienes img:hover{    
     transform: scale(1.2);
 }
 
@@ -114,12 +121,13 @@ p{
 
 footer{
     background-color: #2d3436;
-    color: #dfe6e9;    
+    color: #dfe6e9;
 }
 
 footer table{
     border-spacing: 10px;
     font-family: 'Nunito', sans-serif;
+    margin: 0 auto;
 }
 
 .clientes{
@@ -127,3 +135,16 @@ footer table{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 3em;
 }
+
+.clientes div{
+    padding: 1em;
+    transition: all 0.25s;
+}
+
+.clientes div:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 18px 15px rgba(0, 0, 0, 0.2);        
+}
+
+
+
