@@ -9,8 +9,8 @@ package Modelo;
  * @author ian_i
  */
 public class Medico {
-    private int id,edad;
-    private String nombre,appat,especialidad,usuario,contrasena;
+    private int id,edad, especialidad;
+    private String nombre,appat,usuario,contrasena;
     
     public Medico(){}
 
@@ -46,11 +46,11 @@ public class Medico {
         this.appat = appat;
     }
 
-    public String getEspecialidad() {
+    public int getEspecialidad() {
         return especialidad;
     }
 
-    public void setEspecialidad(String especialidad) {
+    public void setEspecialidad(int especialidad) {
         this.especialidad = especialidad;
     }
 

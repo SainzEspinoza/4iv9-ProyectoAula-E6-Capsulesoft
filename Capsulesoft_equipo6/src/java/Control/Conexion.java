@@ -14,9 +14,9 @@ public class Conexion {
     
         public static Connection getConnection(){
             String url,username,pssword;
-            url= "jdbc:mysql://localhost/capsulesoft_equipo6";
-            username = "root";
-            pssword= "1Yan$polar5101520";
+            url= "jdbc:mysql://capsulesoftequipo6.mysql.database.azure.com/capsulesoft_equipo6";
+            username = "IanPerez@capsulesoftequipo6";
+            pssword= "Capsule_server";
             Connection con =null;
             
             try{
