@@ -1,0 +1,100 @@
+<html lang="es">
+    <head>
+        <title>Registro de Administrador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/esqueleto.css">
+        <link rel="icon" href="./imgs/icono.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">        
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>        
+            <div class="barra">
+                <img src="imgs/capsula.png" alt="Capsula PNG">
+                <nav>
+                    <div>
+                        <a href="./index.html">Presentación</a>
+                    </div>
+                    <div>
+                        <a href="./acerca.html">Acerca de Hospisoft</a>
+                    </div>
+                    <div>
+                        <a href="./clientes.html">Nuestros clientes</a>
+                    </div>
+                    <div>
+                        <a href="./registro.html">Registrate</a>
+                    </div>                
+                </nav>
+            </div>        
+        </header>
+        <div class="principal">
+            <div style="text-align: center; margin-bottom: 1em;">
+                <p>                
+            <h3>Registro de Administradores</h3>
+            </p>
+            </div>            
+            <form method="POST" name="RegistroAdmin" action="guardarAdmin"></form>
+                <div class="divRegistro">                
+                            <div style="margin-left: auto;">Nombre:</div>
+                            <input type="text" name="nombre" maxlength="20">
+                            <div style="margin-left: auto;">Apellido Paterno:</div>
+                            <input type="text" name="appat" maxlength="20">
+                            <div style="margin-left: auto;">Apellido Materno:</div>
+                            <input type="text" name="apmat" maxlength="20">
+                            <div style="margin-left: auto;">Peso:</div>
+                            <input type="text" name="peso" maxlength="20">
+                            <div style="margin-left: auto;">Altura:</div>
+                            <input type="text" name="estatura" maxlength="20">
+                            <div style="margin-left: auto;">Padecimiento:</div>
+                                <select name="pad">
+                                    <option value="1">S/P</option>
+                                    <option value="2">Obesidad</option>
+                                    <option value="3">Diabetes</option>
+                                    <option value="4">Hipertensión</option>
+                                    <option value="5">Cáncer </option>
+                                    <option value="6">Epilepsia</option>
+                                    <option value="7">Ceguera / Sordera</option>
+                                    <option value="8">Alergia</option>
+                                    <option value="9">Insuficiencia Renal</option>
+                                    <option value="10">VIH</option>
+                                    <option value="11">Otro</option>
+                                </select>
+                                <div style="margin-left: auto;">Tipo de Sangre:</div>
+                                <select name="tipoSangre">
+                                    <option value="1">0-</option>
+                                    <option value="2">0+</option>
+                                    <option value="3">A-</option>
+                                    <option value="4">A+</option>
+                                    <option value="5">B-</option>
+                                    <option value="6">B+</option>
+                                    <option value="7">AB+</option>
+                                    <option value="8">AB-</option>                                    
+                                </select>                            
+                                <div style="margin-left: auto;">Usuario:</div>
+                            <input type="text" name="usuario" maxlength="20">
+                            <div style="margin-left: auto;">Contraseña:</div>
+                            <input type="password" name="contrasena" maxlength="20">
+                            <div style="margin-left: auto;">Confirmar Contraseña:</div>
+                            <input type="password" name="contrasena2" maxlength="20">
+                    </div>
+                <div class="botonRegistro">
+                    <input type="submit" value="Registar Administrador" class="botonRegistrar">
+                </div>
+            </form>
+        </div>
+        <footer style="color: #dfe6e9;">        
+            <table>
+                <tr><th>Nombre</th><th>Puesto</th><th>Correo de contacto</th></tr>
+                <tr><td>Sainz Espinoza Jesus Jair</td><td>Jefe de Proyecto</td><td>jsainze1800@alumno.ipn.mx</td></tr>            
+                <tr><td>Sanchez Garcia Diego Caleb</td><td>Jefe de Diseño y Programador</td><td>dsanchezg1903@alumno.ipn.mx</td></tr>            
+                <tr><td>Alba Obarra Lius Angel</td><td>Jefe de Programación</td><td>laobarraa4646@alumno.ipn.mx</td></tr>
+                <tr><td>Perez Aguirre Ian Miztli</td><td>Diseño</td><td>ipereza1702@alumno.ipn.mx</td></tr>
+                <tr><td>De la Cruz Acuña Mario Ricardo</td><td>Programador</td><td>DlaCruz454@alumno.ipn.mx</td></tr>
+                <tr><td>Tellez Aguilar Diego</td><td>Programador</td><td>dtelleza54@alumno.ipn.mx</td></tr>            
+            </table>
+        </footer>
+    </body>
+</html>
