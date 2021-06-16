@@ -72,7 +72,7 @@ nav div:hover{
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 15%;
-    margin-right: 15%;    
+    margin-right: 15%;
 }
 
 h2, h4{
@@ -136,6 +136,7 @@ footer table{
     border-spacing: 10px;
     font-family: 'Nunito', sans-serif;
     margin: 0 auto;
+    color: #dfe6e9;
 }
 
 .clientes{
@@ -259,3 +260,50 @@ footer table{
 .flash{
     --animate-duration: 1s;
 }
+
+
+/*Clase para el contenedor de registro de un usuario*/
+
+.divRegistro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.divRegistro input, select{
+    margin-bottom: 1em;
+    height: 25px;
+    border: 0;
+    border-bottom: #2d3436 1px solid;
+    background-color: transparent;
+    outline: none;
+    width: 12em;
+}
+
+.botonRegistro{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.botonRegistro input[type="submit"]{
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    background: #a29bfe;
+    color: #2d3436;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.botonRegistro input[type="submit"]:hover{
+    background: #6c5ce7;
+    color: #fff;
+    
+}
+
+
+/*--------------------------------------------------*/

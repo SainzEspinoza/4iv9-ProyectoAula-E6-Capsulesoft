@@ -1,57 +1,68 @@
-<html>
+<html lang="es">
     <head>
         <title>Registro de pacientes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/esqueleto.css">
+        <link rel="icon" href="./imgs/icono.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">        
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div class="Container">
-            <div class="ContainerRegistro">
-                <h1>Registro de pacientes </h1><br><br>
-                <form method="POST" name="RegistroPaciente" action="guardarPaciente">
-                    <table border="2">
-                        <tr>
-                            <td>Nombre: </td>
-                            <td><input type="text" name="nombre" size="30"></td>
-                        </tr>
-                        <tr>
-                            <td>Apellido paterno:</td>
-                            <td><input type="text" name="appat" size="30"></td>
-                        </tr>
-                        <tr>
-                            <td>Apellido materno:</td>
-                            <td><input type="text" name="apmat" size="30"></td>
-                        </tr>
-                        <tr>
-                            <td>Peso:</td>
-                            <td><input type="text" name="peso" size="30"></td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Altura:</td>
-                            <td><input type="text" name="estatura" size="30"></td>
-                        </tr>
-                        <tr>
-                            <td>Padecimiento:</td>
-                            <td>
+        <header>        
+            <div class="barra">
+                <img src="imgs/capsula.png" alt="Capsula PNG">
+                <nav>
+                    <div>
+                        <a href="./index.html">Presentación</a>
+                    </div>
+                    <div>
+                        <a href="./acerca.html">Acerca de Hospisoft</a>
+                    </div>
+                    <div>
+                        <a href="./clientes.html">Nuestros clientes</a>
+                    </div>
+                    <div>
+                        <a href="./registro.html">Registrate</a>
+                    </div>                
+                </nav>
+            </div>        
+        </header>
+        <div class="principal">
+            <div style="text-align: center; margin-bottom: 1em;">
+                <p>                
+            <h3>Registro de pacientes</h3>
+            </p>
+            </div>            
+            <form method="POST" name="RegistroPaciente" action="guardarPaciente">
+                <div class="divRegistro">                
+                            <div style="margin-left: auto;">Nombre:</div>
+                            <input type="text" name="nombre" maxlength="20">
+                            <div style="margin-left: auto;">Apellido Paterno:</div>
+                            <input type="text" name="appat" maxlength="20">
+                            <div style="margin-left: auto;">Apellido Materno:</div>
+                            <input type="text" name="apmat" maxlength="20">
+                            <div style="margin-left: auto;">Peso:</div>
+                            <input type="text" name="peso" maxlength="20">
+                            <div style="margin-left: auto;">Altura:</div>
+                            <input type="text" name="estatura" maxlength="20">
+                            <div style="margin-left: auto;">Padecimiento:</div>
                                 <select name="pad">
                                     <option value="1">S/P</option>
-                                    <option value="2">obesidad</option>
-                                    <option value="3">diabetes</option>
-                                    <option value="4">hipertension</option>
-                                    <option value="5">cancer </option>
-                                    <option value="6">epilepsia</option>
-                                    <option value="7">ceguera/sordera</option>
-                                    <option value="8">alergia</option>
-                                    <option value="9">insuf. renal</option>
-                                    <option value="10">vih</option>
-                                    <option value="11">otro</option>
+                                    <option value="2">Obesidad</option>
+                                    <option value="3">Diabetes</option>
+                                    <option value="4">Hipertensión</option>
+                                    <option value="5">Cáncer </option>
+                                    <option value="6">Epilepsia</option>
+                                    <option value="7">Ceguera / Sordera</option>
+                                    <option value="8">Alergia</option>
+                                    <option value="9">Insuficiencia Renal</option>
+                                    <option value="10">VIH</option>
+                                    <option value="11">Otro</option>
                                 </select>
-                            </td>
-                        </tr>
-                        <tr>
-                        <td>Tipo de Sangre:</td>
-                            <td>
+                                <div style="margin-left: auto;">Tipo de Sangre:</div>
                                 <select name="tipoSangre">
                                     <option value="1">0-</option>
                                     <option value="2">0+</option>
@@ -61,25 +72,29 @@
                                     <option value="6">B+</option>
                                     <option value="7">AB+</option>
                                     <option value="8">AB-</option>                                    
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Usuario: </td>
-                            <td><input type="text" name="usuario" size="30"></td>
-                        </tr>
-                        <tr>
-                            <td>Contraseña: </td>
-                            <td><input type="password" name="contrasena" size="30"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><input type="submit"
-                                                   value="Registar Paciente"></td>
-                        </tr>
-                    </table>
-                    
-                </form>
-            </div>
+                                </select>                            
+                                <div style="margin-left: auto;">Usuario:</div>
+                            <input type="text" name="usuario" maxlength="20">
+                            <div style="margin-left: auto;">Contraseña:</div>
+                            <input type="password" name="contrasena" maxlength="20">
+                            <div style="margin-left: auto;">Confirmar Contraseña:</div>
+                            <input type="password" name="contrasena2" maxlength="20">
+                    </div>
+                <div class="botonRegistro">
+                    <input type="submit" value="Registar Paciente" class="botonRegistrar">
+                </div>
+            </form>
         </div>
+        <footer style="color: #dfe6e9;">        
+            <table>
+                <tr><th>Nombre</th><th>Puesto</th><th>Correo de contacto</th></tr>
+                <tr><td>Sainz Espinoza Jesus Jair</td><td>Jefe de Proyecto</td><td>jsainze1800@alumno.ipn.mx</td></tr>            
+                <tr><td>Sanchez Garcia Diego Caleb</td><td>Jefe de Diseño y Programador</td><td>dsanchezg1903@alumno.ipn.mx</td></tr>            
+                <tr><td>Alba Obarra Lius Angel</td><td>Jefe de Programación</td><td>laobarraa4646@alumno.ipn.mx</td></tr>
+                <tr><td>Perez Aguirre Ian Miztli</td><td>Diseño</td><td>ipereza1702@alumno.ipn.mx</td></tr>
+                <tr><td>De la Cruz Acuña Mario Ricardo</td><td>Programador</td><td>DlaCruz454@alumno.ipn.mx</td></tr>
+                <tr><td>Tellez Aguilar Diego</td><td>Programador</td><td>dtelleza54@alumno.ipn.mx</td></tr>            
+            </table>
+        </footer>
     </body>
 </html>
