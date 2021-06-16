@@ -72,11 +72,7 @@ nav div:hover{
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 15%;
-<<<<<<< HEAD
-    margin-right: 15%;    
-=======
     margin-right: 15%;
->>>>>>> origin/ramaDiseño
 }
 
 h2, h4{
@@ -140,10 +136,7 @@ footer table{
     border-spacing: 10px;
     font-family: 'Nunito', sans-serif;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
     color: #dfe6e9;
->>>>>>> origin/ramaDiseño
 }
 
 .clientes{
@@ -266,9 +259,6 @@ footer table{
 
 .flash{
     --animate-duration: 1s;
-<<<<<<< HEAD
-}
-=======
 }
 
 
@@ -317,4 +307,3 @@ footer table{
 
 
 /*--------------------------------------------------*/
->>>>>>> origin/ramaDiseño
