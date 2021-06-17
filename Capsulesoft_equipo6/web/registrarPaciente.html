@@ -12,7 +12,7 @@
     </head>
     <body>
         <header>        
-            <div class="barra">
+            <div class="barra animate__animated animate__bounceInDown">
                 <img src="imgs/capsula.png" alt="Capsula PNG">
                 <nav>
                     <div>
@@ -25,7 +25,7 @@
                         <a href="./clientes.html">Nuestros clientes</a>
                     </div>
                     <div>
-                        <a href="./registro.html">Registrate</a>
+                        <a href="./registro.html">Iniciar sesión</a>
                     </div>                
                 </nav>
             </div>        
@@ -36,7 +36,7 @@
             <h3>Registro de pacientes</h3>
             </p>
             </div>            
-            <form method="POST" name="RegistroPaciente" action="guardarPaciente"></form>
+            <form method="POST" id="formulario" action="guardarPaciente"></form>
                 <div class="divRegistro">                
                             <div style="margin-left: auto;">Nombre:</div>
                             <input type="text" name="nombre" maxlength="20">
