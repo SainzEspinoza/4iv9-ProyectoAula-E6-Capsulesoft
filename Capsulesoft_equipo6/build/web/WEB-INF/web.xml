@@ -8,6 +8,10 @@
         <servlet-name>guardarMedico</servlet-name>
         <servlet-class>Servlets.guardarMedico</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ValidarServlet</servlet-name>
+        <servlet-class>Servlets.ValidarServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>guardarPaciente</servlet-name>
         <url-pattern>/guardarPaciente</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>guardarMedico</servlet-name>
         <url-pattern>/guardarMedico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidarServlet</servlet-name>
+        <url-pattern>/ValidarServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
