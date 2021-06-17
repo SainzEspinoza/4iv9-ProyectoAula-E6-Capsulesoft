@@ -105,7 +105,11 @@ p{
 .imgZoom{
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: center;    
+}
+
+.imgZoom img{
+    width: 150px;
 }
 
 .imgZoom img{
@@ -241,7 +245,7 @@ footer table{
 .registro input[type="submit"]:hover{
     background: #6c5ce7;
     color: #fff;
-    
+    cursor: hand;
 }
 
 .registro a{
@@ -322,6 +326,7 @@ footer table{
 .botonRegistro input[type="submit"]:hover{
     background: #a29bfe;
     color: #2d3436;
+    cursor: hand;
 }
 
 .botonRegresar{
@@ -344,7 +349,8 @@ footer table{
 
 .botonRegresar input[type="button"]:hover{
     background: #ff7675;
-    color: #2d3436;    
+    color: #2d3436;
+    cursor: hand;
 }
 
 /*--------------------------------------------------*/
@@ -370,3 +376,4 @@ footer table{
 }
 
 /*------------------------------------*/
+

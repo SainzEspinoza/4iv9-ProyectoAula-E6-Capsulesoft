@@ -13,23 +13,23 @@
     </head>
     <body bgcolor="#dfe6e9">
         <header>        
-            <div class="barra">
+            <div class="barra animate__animated animate__bounceInDown">
                 <img src="imgs/capsula.png" alt="Capsula PNG">
                 <nav>
                     <div>
                         <a href="./index.html">Presentación</a>
                     </div>
                     <div>
-                        <a href="./acerca.html">Acerca de Hospisoft</a>
+                        <a href="./acerca.html">Acerca de</a>
                     </div>
                     <div>
                         <a href="./clientes.html">Gráficas</a>
                     </div>
                     <div>
-                        <a href="./registro.html">Registrate</a>
+                        <a href="./registro.html">Iniciar sesión</a>
                     </div>                
                 </nav>
-            </div>        
+            </div>
         </header>
         <div class="principal">
             <div style="text-align: center; margin-bottom: 1em;">
@@ -43,11 +43,10 @@
                             <input type="text" name="nombre" maxlength="20">
                             <div style="margin-left: auto;">Apellido Paterno:</div>
                             <input type="text" name="appat" maxlength="20">
-                            <div style="margin-left: auto;">Apellido Materno:</div>
-                            <input type="text" name="edad" maxlength="20">
                             <div style="margin-left: auto;">Edad:</div>
+                            <input type="text" name="edad" maxlength="20">
                             <div style="margin-left: auto;">Especialidad:</div>
-                            <select name="pad">
+                            <select name="especialidad">
                                     <option value="1">Cardiología</option>
                                     <option value="2">Neurología</option>
                                     <option value="3">Oncología</option>
@@ -60,7 +59,7 @@
                                     <option value="10">Urología</option>
                                     <option value="11">Cirugía</option>
                                 </select>                            
-                                <div style="margin-left: auto;">Usuario:</div>
+                            <div style="margin-left: auto;">Usuario:</div>
                             <input type="text" name="usuario" maxlength="20">
                             <div style="margin-left: auto;">Contraseña:</div>
                             <input type="password" name="contrasena" maxlength="20">
@@ -71,7 +70,9 @@
                     <input type="submit" value="Registar Médico" class="botonRegistrar">
                 </div>
                 <div class="botonRegresar">
-                    <input type="button" value="Regresar" class="botonRegresar" onclick="regresar();">
+                    <a href="./prepantalla.html">
+                        <input type="button" value="Regresar" class="botonRegresar">
+                    </a>
                 </div>
             </form>
         </div>
