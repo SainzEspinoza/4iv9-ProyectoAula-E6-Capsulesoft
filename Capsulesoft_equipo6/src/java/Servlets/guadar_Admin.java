@@ -5,8 +5,8 @@
  */
 package Servlets;
 
-import Control.Acciones_Medico;
-import Modelo.Medico;
+import Control.Acciones_Admin;
+import Modelo.Admin;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author ian_i
  */
-public class guardarMedico extends HttpServlet {
+public class guadar_Admin extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,29 +34,29 @@ public class guardarMedico extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            String nombre,appat,usuario,contrasena;
-            int edad,especialidad;
+            String nombre,appat,apmat,usuario,contrasena;
+            int edad;
             
             nombre=request.getParameter("nombre");
             appat=request.getParameter("appat");
+            apmat=request.getParameter("apmat");
             edad=Integer.parseInt(request.getParameter("edad"));
-            especialidad=Integer.parseInt(request.getParameter("especialidad"));
             usuario=request.getParameter("usuario");
             contrasena=request.getParameter("contrasena");
             
-            Medico m= new Medico();
+            Admin a = new Admin ();
             
-            m.setNombre(nombre);
-            m.setAppat(appat);
-            m.setEdad(edad);
-            m.setEspecialidad(especialidad);
-            m.setUsuario(usuario);
-            m.setContrasena(contrasena);
+            a.setNombre(nombre);
+            a.setAppat(appat);
+            a.setApmat(apmat);
+            a.setEdad(edad);
+            a.setUsuario(usuario);
+            a.setContrasena(contrasena);
             
-            int status= Acciones_Medico.RegistrarMedico(m);
+            int status= Acciones_Admin.RegistrarAdmin(a);
             
             if(status>0){
-                response.sendRedirect("Registro_medicos.jsp");
+                response.sendRedirect("Registro_admins.jsp");
             }else{
                 response.sendRedirect("error.jsp");
             }
