@@ -377,3 +377,21 @@ footer table{
 
 /*------------------------------------*/
 
+/*Estilos para validacion js*/
+
+.formulario__input {
+    color:#bb2929;
+    border: 10px solid cyan;
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+/*--------------------------*/
