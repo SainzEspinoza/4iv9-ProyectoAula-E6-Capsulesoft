@@ -9,10 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Bienvenido Paciente</title>
     </head>
     <body>
-        <h1>Registro Exitoso</h1>
+        <%HttpSession SesionPa = request.getSession();
+        
+        %>
+        <h1>Ya es parte de HOSPISOFT</h1>
         <a href="index.html"> Regresar al menu principal</a>
     </body>
 </html>
