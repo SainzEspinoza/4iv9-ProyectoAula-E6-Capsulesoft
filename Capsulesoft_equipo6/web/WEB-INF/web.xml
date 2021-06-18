@@ -9,13 +9,20 @@
         <servlet-class>Servlets.guardarMedico</servlet-class>
     </servlet>
     <servlet>
-<<<<<<< HEAD
-        <servlet-name>ValidarServlet</servlet-name>
-        <servlet-class>Servlets.ValidarServlet</servlet-class>
-=======
         <servlet-name>guadar_Admin</servlet-name>
         <servlet-class>Servlets.guadar_Admin</servlet-class>
->>>>>>> 03fd8cc904fdd84a615fd698d669e803387320c0
+    </servlet>
+    <servlet>
+        <servlet-name>VerificarUsuario</servlet-name>
+        <servlet-class>Servlets.VerificarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerificarMedico</servlet-name>
+        <servlet-class>Servlets.VerificarMedico</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerificarAdministrador</servlet-name>
+        <servlet-class>Servlets.VerificarAdministrador</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>guardarPaciente</servlet-name>
@@ -26,13 +33,20 @@
         <url-pattern>/guardarMedico</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-<<<<<<< HEAD
-        <servlet-name>ValidarServlet</servlet-name>
-        <url-pattern>/ValidarServlet</url-pattern>
-=======
         <servlet-name>guadar_Admin</servlet-name>
         <url-pattern>/guadar_Admin</url-pattern>
->>>>>>> 03fd8cc904fdd84a615fd698d669e803387320c0
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerificarUsuario</servlet-name>
+        <url-pattern>/VerificarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerificarMedico</servlet-name>
+        <url-pattern>/VerificarMedico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerificarAdministrador</servlet-name>
+        <url-pattern>/VerificarAdministrador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
