@@ -5,18 +5,20 @@
  */
 package Servlets;
 
+import Modelo.Admin;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author Caleb
+ * @author ian_i
  */
-public class ValidarServlet extends HttpServlet {
+public class VerificarAdministrador extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,15 +34,27 @@ public class ValidarServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ValidarServlet</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ValidarServlet at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            String usuario,contrasena;
+            int privilegio;
+            usuario=request.getParameter("usuario");
+            contrasena=request.getParameter("contrasena");
+            Admin a= new Admin();
+            a=a.VerificarAdmin(usuario, contrasena);
+            if(a!=null){
+                HttpSession sesionAd=request.getSession(true);
+                sesionAd.setAttribute("usuario", a);
+                
+                HttpSession sesionParametro=request.getSession();
+                sesionParametro.setAttribute("usuario", usuario);
+                if(a.getPrivilegio()==3){
+                    response.sendRedirect("BienvenidaAdmins.jsp");
+                }else{
+                    response.sendRedirect("registro.html");
+                }
+            }else{
+                response.sendRedirect("error.jsp");
+            }
+            
         }
     }
 

@@ -12,6 +12,18 @@
         <servlet-name>guadar_Admin</servlet-name>
         <servlet-class>Servlets.guadar_Admin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>VerificarUsuario</servlet-name>
+        <servlet-class>Servlets.VerificarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerificarMedico</servlet-name>
+        <servlet-class>Servlets.VerificarMedico</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VerificarAdministrador</servlet-name>
+        <servlet-class>Servlets.VerificarAdministrador</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>guardarPaciente</servlet-name>
         <url-pattern>/guardarPaciente</url-pattern>
@@ -23,6 +35,18 @@
     <servlet-mapping>
         <servlet-name>guadar_Admin</servlet-name>
         <url-pattern>/guadar_Admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerificarUsuario</servlet-name>
+        <url-pattern>/VerificarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerificarMedico</servlet-name>
+        <url-pattern>/VerificarMedico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerificarAdministrador</servlet-name>
+        <url-pattern>/VerificarAdministrador</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
