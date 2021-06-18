@@ -1,81 +1,84 @@
-<!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="./css/esqueleto.css">
-    <link rel="icon" href="./imgs/icono.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet">    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Roboto&display=swap" rel="stylesheet">
-
-    <title>Registrate</title>
-</head>
-<body>
-    <header>        
-        <div class="barra animate__animated animate__bounceInDown">
-            <img src="imgs/capsula.png" alt="Capsula PNG">
-            <nav>
-                <div>
-                    <a href="./index.html">Presentación</a>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/esqueleto.css">
+        <link rel="icon" href="./imgs/icono.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">        
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet"> 
+    </head>
+    <body bgcolor="#dfe6e9">
+        <header>        
+            <div class="barra animate__animated animate__bounceInDown">
+                <img src="imgs/capsula.png" alt="Capsula PNG">
+                <nav>
+                    <div>
+                        <a href="./index.html">Presentación</a>
+                    </div>
+                    <div>
+                        <a href="./acerca.html">Acerca de</a>
+                    </div>
+                    <div>
+                        <a href="./clientes.html">Gráficas</a>
+                    </div>
+                    <div>
+                        <a href="./registro.html">Iniciar sesión</a>
+                    </div>                
+                </nav>
+            </div>
+        </header>
+        <div class="principal">
+            <center>
+                <h2>Iniciar sesión para:</h2>
+            </center>
+                <div class="clientes">
+                    <a href="./preUsuario.html">
+                        <div>
+                            <figure class="imagenC">
+                                <img src="./imgs/paciente.png" alt="asd">
+                            </figure>
+                            <p class="imagenC">
+                                <b>Paciente</b>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="./preMedico.html">
+                        <div>
+                            <figure class="imagenC">
+                                <img src="./imgs/medico.png" alt="asd">
+                            </figure>
+                            <p class="imagenC">
+                                <b>Médico</b>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="./preAdmin.html">
+                        <div>
+                            <figure class="imagenC">
+                                <img src="./imgs/admin.png" alt="asd">
+                            </figure>
+                            <p class="imagenC">
+                                <b>Administrador</b>
+                            </p>
+                        </div>
+                    </a>
                 </div>
-                <div>
-                    <a href="./acerca.html">Acerca de</a>
+                <div class="botonRegresar">
+                    <a href="./prepantalla.html">
+                        <input type="button" value="Registrarse" class="botonRegresar">
+                    </a>
                 </div>
-                <div>
-                    <a href="./clientes.html">Nuestros clientes</a>
-                </div>
-                <div>
-                    <a href="./registro.html">Registrate</a>
-                </div>                
-            </nav>
-        </div>        
-    </header>
-    <div class="principal">
-        <div class="registro">
-            <img src="./imgs/capsula.png" alt="asd">
-            <h4>Inicia sesión</h4>
-            <form action="registro.html">
-                <label for="username">Nombre de usuario</label>
-                <input type="text" placeholder="Ingrese su usuario">
-
-                <label for="password">Contraseña</label>
-                <input type="password" placeholder="Ingrese su contraseña">
-
-                <input type="submit" value="Iniciar sesión">
-
-                <a href="">Olvidé mi contraseña</a><br>
-                <a href="">No estoy registrado</a>
-            </form>
-
         </div>
-    </div>
-    <footer>
-        <table>
-            <tr><th>Nombre</th><th>Puesto</th><th>Correo de contacto</th></tr>
-            <tr><td>Sainz Espinoza Jesus Jair</td><td>Jefe de Proyecto</td><td>jsainze1800@alumno.ipn.mx</td></tr>            
-            <tr><td>Sanchez Garcia Diego Caleb</td><td>Jefe de Diseño y Programador</td><td>dsanchezg1903@alumno.ipn.mx</td></tr>            
-            <tr><td>Alba Obarra Lius Angel</td><td>Jefe de Programación</td><td>laobarraa4646@alumno.ipn.mx</td></tr>
-            <tr><td>Perez Aguirre Ian Miztli</td><td>Diseño</td><td>ipereza1702@alumno.ipn.mx</td></tr>
-            <tr><td>De la Cruz Acuña Mario Ricardo</td><td>Programador</td><td>DlaCruz454@alumno.ipn.mx</td></tr>
-            <tr><td>Tellez Aguilar Diego</td><td>Programador</td><td>dtelleza54@alumno.ipn.mx</td></tr>            
-        </table>
-    </footer>
-</body>
+        <footer style="color: #dfe6e9;">        
+            <table>
+                <tr><th>Nombre</th><th>Puesto</th><th>Correo de contacto</th></tr>
+                <tr><td>Sainz Espinoza Jesus Jair</td><td>Jefe de Proyecto</td><td>jsainze1800@alumno.ipn.mx</td></tr>
+                <tr><td>Sanchez Garcia Diego Caleb</td><td>Jefe de Diseño y Programador</td><td>dsanchezg1903@alumno.ipn.mx</td></tr>
+                <tr><td>Perez Aguirre Ian Miztli</td><td>Diseño</td><td>ipereza1702@alumno.ipn.mx</td></tr>            
+            </table>
+        </footer>
+    </body>
 </html>

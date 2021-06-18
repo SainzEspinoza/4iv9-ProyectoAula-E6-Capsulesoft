@@ -40,7 +40,7 @@ public class guardarMedico extends HttpServlet {
             nombre=request.getParameter("nombre");
             appat=request.getParameter("appat");
             edad=Integer.parseInt(request.getParameter("edad"));
-            especialidad=Integer.parseInt(request.getParameter("especilidad"));
+            especialidad=Integer.parseInt(request.getParameter("especialidad"));
             usuario=request.getParameter("usuario");
             contrasena=request.getParameter("contrasena");
             

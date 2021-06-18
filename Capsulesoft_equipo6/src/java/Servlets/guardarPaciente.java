@@ -9,10 +9,13 @@ import Control.Acciones_Paciente;
 import Modelo.Paciente;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.Date;
+import java.util.Enumeration;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -34,6 +37,32 @@ public class guardarPaciente extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            
+            HttpSession SesionPa = request.getSession(true);
+            String idsesion=SesionPa.getId();
+            long fechaCreacion = SesionPa.getCreationTime();
+            long fechaUltimoAcc= SesionPa.getLastAccessedTime();
+            
+            Integer CuentaPa = (Integer)SesionPa.getAttribute("cuentapaciente.ss");
+            
+            if (CuentaPa==null){
+             CuentaPa = new Integer(1);   
+            }else{
+            CuentaPa= new Integer(CuentaPa.intValue()+1);
+            }
+            //imprimimos valores
+            System.out.println("ID sesion: "+idsesion);
+            System.out.println("Fecha de Creacion: " + new Date (fechaCreacion));
+            System.out.println("Fecha del ultimo acceso"+ new Date (fechaUltimoAcc));
+            // Visualizamos los parametros de la galleta (hashmap)
+            Enumeration parametrosSesionPa =SesionPa.getAttributeNames();
+            while(parametrosSesionPa.hasMoreElements()){
+            String parametros=(String)parametrosSesionPa.nextElement();
+            Object valor=SesionPa.getAttribute(parametros);
+                System.out.println("PARAMETRO: "+parametros
+                +"VALOR: "+valor.toString());
+            }
+            
             String nombre,appat,apmat,usuario,contrasena;
             int estatura,tipoSangre,pad;
             float peso;
