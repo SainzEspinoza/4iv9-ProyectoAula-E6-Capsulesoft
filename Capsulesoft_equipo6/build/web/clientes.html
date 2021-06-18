@@ -18,11 +18,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script> 
+    <script src='./js/morris.min.js'></script>
+    <link rel='stylesheet' type='text/css' href='./css/morris.css'>  
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
     <title>Capsule Soft</title>
 </head>
-<body>
+<body bgcolor="#dfe6e9">
     <header>        
-        <div class="barra">
+        <div class="barra animate__animated animate__bounceInDown">
             <img src="imgs/capsula.png" alt="Capsula PNG">
             <nav>
                 <div>
@@ -32,42 +43,69 @@
                     <a href="./acerca.html">Acerca de</a>
                 </div>
                 <div>
-                    <a href="./clientes.html">Nuestros clientes</a>
+                    <a href="./clientes.html">Gráficas</a>
                 </div>
                 <div>
-                    <a href="./registro.html">Registrate</a>
+                    <a href="./registro.html">Iniciar sesión</a>
                 </div>                
             </nav>
         </div>        
-    </header>
+    </header>    
     <div class="principal">
-        <center>
-            <h2>Nuestros Clientes</h2>
-        </center>
-        <div class="clientes">
-            <div>
-                <img src="./imgs/capsula.png" alt="asd">                
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit mollitia illum quas corrupti quaerat dolorem tempora, fugit et vitae tempore quo nobis, earum consequatur, facere ipsa iste consectetur dignissimos exercitationem?
-                </p>
-            </div>
-            <div>
-                <img src="./imgs/capsula.png" alt="asd">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit mollitia illum quas corrupti quaerat dolorem tempora, fugit et vitae tempore quo nobis, earum consequatur, facere ipsa iste consectetur dignissimos exercitationem?
-                </p>
-            </div>
-            <div>
-                <img src="./imgs/capsula.png" alt="asd">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit mollitia illum quas corrupti quaerat dolorem tempora, fugit et vitae tempore quo nobis, earum consequatur, facere ipsa iste consectetur dignissimos exercitationem?
-                </p>
-            </div>            
-        </div>
-        <div>
-            <h2>Cotización</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur suscipit delectus sapiente impedit, quo reprehenderit iste iure neque eveniet in repudiandae id similique itaque sunt doloremque voluptatem perspiciatis dignissimos?</p>
-        </div>
+        <script>    
+function grafica1(){
+  new Morris.Bar({
+  element: 'graph',
+  data: [{x:'D.F. Norte (4A)', y:21203, z:1},
+{x:'D.F. Sur (4B)', y:15115, z:2},
+{x:'Jalisco (4C)', y:21303, z:3},
+{x:'Nuevo Le�n (4D)', y:14598, z:4},
+{x:'Coahuila (4E)', y:12034, z:5},
+{x:'Puebla (4F)', y:19219, z:6},
+{x:'Guanajuato (4G)', y:9388, z:7},
+{x:'Sonora (4H)', y:7551, z:8},
+{x:'Veracruz Norte (4I)', y:14481, z:9},
+{x:'Yucat�n (4J)', y:7169, z:10},
+{x:'D.F. Norte (4K)', y:14362, z:11},
+{x:'D.F. Sur (4L)', y:27850, z:12},
+{x:'Jalisco (4M)', y:10244, z:13},
+{x:'Nuevo Le�n (4N)', y:26630, z:14},
+{x:'D.F. Norte (4O)', y:23267, z:15},
+{x:'M�xico Poniente (4P)', y:11971, z:16},
+{x:'Puebla (4Q)', y:6915, z:17},
+{x:'Nuevo Le�n (4R)', y:11755, z:18},
+{x:'D.F. Sur (4S)', y:5466, z:19},
+{x:'Jalisco (4T)', y:9667, z:20},
+{x:'D.F. Sur (4U)', y:6703, z:21},
+{x:'Nuevo Le�n (4V)', y:9948, z:22},
+{x:'Guanajuato (4W)', y:18739, z:23},
+{x:'D.F.  Norte (4X)', y:20341, z:24},
+{x:'D.F. Sur (4Y)', y:8874, z:25},
+],
+  xkey: 'x',
+  ykeys: ['y'],
+  labels: ['Ingresos'],
+  resize:true,
+  barColors:['#ea8685'],
+  hideHover: 'auto'
+  });   
+}
+</script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <h2>
+                Total de Ingresos
+            </h2>
+            <hr>
+            <div id='graph'></div>
+        </div>        
+    </div>        
+</div>
+
+<input type='button' value='Graficar' onclick='grafica1()' class="btn btn-primary" style="margin-left: 20em;">
     </div>
     <footer>
         <table>
