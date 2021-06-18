@@ -32,26 +32,48 @@
         </header>
         <div class="principal">
             <div style="text-align: center; margin-bottom: 1em;">
-                <p>                
+            <p>                
             <h3>Registro de Administradores</h3>
             </p>
+            <br>
+            <p class="formulario__input-error" id="leyenda-nombre">
+                El nombre únicamente debe llevar letras.
+            </p>
+            <p class="formulario__input-error" id="leyenda-app">
+                El apellido únicamente debe llevar letras.
+            </p>
+            <p class="formulario__input-error" id="leyenda-peso">
+                La edad debe ser de 1 a 2 digitos.
+            </p>
+            <p class="formulario__input-error" id="leyenda-altura">
+                La altura únicamente debe llevar números y de dos a tres digitos.
+            </p>
+            <p class="formulario__input-error" id="leyenda-usu">
+                El usuario únicamente puede tener letras, números, guion y guion bajo.
+            </p>
+            <p class="formulario__input-error" id="leyenda-pass">
+                La contraseña debe ser de 4 a 12 digitos númericos.
+            </p>
+            <p class="formulario__input-error" id="leyenda-pass2">
+                Las contraseñas deben coincidir.
+            </p>
             </div>            
-            <form method="POST" name="RegistroAdmin" action="guadar_Admin">
+            <form method="POST" name="RegistroAdmin" action="guadar_Admin" id="formu">
                 <div class="divRegistro">                
                             <div style="margin-left: auto;">Nombre:</div>
-                            <input type="text" name="nombre" maxlength="20">
+                            <input type="text" name="nombre" id="nombre" maxlength="20" class="formulario__input">
                             <div style="margin-left: auto;">Apellido Paterno:</div>
-                            <input type="text" name="appat" maxlength="20">
+                            <input type="text" name="appat" id="pat_usu" maxlength="20" class="formulario__input">
                             <div style="margin-left: auto;">Apellido Materno:</div>
-                            <input type="text" name="apmat" maxlength="20">
+                            <input type="text" name="apmat" id="mat_usu" maxlength="20" class="formulario__input">
                             <div style="margin-left: auto;">Edad:</div>
-                            <input type="text" name="edad" maxlength="20">
+                            <input type="text" name="edad" id="edad" maxlength="2">
                             <div style="margin-left: auto;">Usuario:</div>
-                            <input type="text" name="usuario" maxlength="20">
+                            <input type="text" name="usuario" id="usu" maxlength="20">
                             <div style="margin-left: auto;">Contraseña:</div>
-                            <input type="password" name="contrasena" maxlength="20">
+                            <input type="password" name="contrasena" id="pass_usu" maxlength="20">
                             <div style="margin-left: auto;">Confirmar Contraseña:</div>
-                            <input type="password" name="contrasena2" maxlength="20">
+                            <input type="password" name="contrasena2" id="pass2_usu" maxlength="20">
                     </div>
                 <div class="botonRegistro">
                     <input type="submit" value="Registar Administrador" class="botonRegistrar">
@@ -71,5 +93,6 @@
                 <tr><td>Perez Aguirre Ian Miztli</td><td>Diseño</td><td>ipereza1702@alumno.ipn.mx</td></tr>            
             </table>
         </footer>
+        <script language="javascript" type="text/javascript" src="./js/validarAdmin.js"></script>
     </body>
 </html>

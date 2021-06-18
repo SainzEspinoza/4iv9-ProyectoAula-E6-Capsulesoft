@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">        
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap" rel="stylesheet"> 
         <title>Registrar Médico</title>
-        <script src="./js/script.js"></script>
     </head>
     <body bgcolor="#dfe6e9">
         <header>        
@@ -33,18 +32,46 @@
         </header>
         <div class="principal">
             <div style="text-align: center; margin-bottom: 1em;">
-                <p>                
-            <h3>Registro de Médicos</h3>
+            <p>                
+                <h3>Registro de Médicos</h3>
+            </p>
+            <br>
+            <p class="formulario__input-error" id="leyenda-nombre">
+                El nombre únicamente debe llevar letras.
+            </p>
+            <p class="formulario__input-error" id="leyenda-app">
+                El apellido únicamente debe llevar letras.
+            </p>
+            <p class="formulario__input-error" id="leyenda-peso">
+                La edad debe ser de 1 a 2 digitos.
+            </p>
+            <p class="formulario__input-error" id="leyenda-altura">
+                La altura únicamente debe llevar números y de dos a tres digitos.
+            </p>
+            <p class="formulario__input-error" id="leyenda-usu">
+                El usuario únicamente puede tener letras, números, guion y guion bajo.
+            </p>
+            <p class="formulario__input-error" id="leyenda-pass">
+                La contraseña debe ser de 4 a 12 digitos númericos.
+            </p>
+            <p class="formulario__input-error" id="leyenda-pass2">
+                Las contraseñas deben coincidir.
             </p>
             </div>            
-            <form method="POST" name="RegistroMedico" action="guardarMedico">
+            <form method="POST" name="RegistroMedico" action="guardarMedico" id="formu">
                 <div class="divRegistro">                
                             <div style="margin-left: auto;">Nombre:</div>
-                            <input type="text" name="nombre" maxlength="20">
+                            <input type="text" name="nombre" id="nombre" maxlength="20" class="formulario__input">
                             <div style="margin-left: auto;">Apellido Paterno:</div>
-                            <input type="text" name="appat" maxlength="20">
+                            <input type="text" name="appat" id="pat_usu" maxlength="20" class="formulario__input">
                             <div style="margin-left: auto;">Edad:</div>
-                            <input type="text" name="edad" maxlength="20">
+                            <input type="text" name="edad" id="edad" maxlength="2">                            
+                            <div style="margin-left: auto;">Usuario:</div>
+                            <input type="text" name="usuario" id="usu" maxlength="20">
+                            <div style="margin-left: auto;">Contraseña:</div>
+                            <input type="password" name="contrasena" id="pass_usu" maxlength="20">
+                            <div style="margin-left: auto;">Confirmar Contraseña:</div>
+                            <input type="password" name="contrasena2" id="pass2_usu" maxlength="20">
                             <div style="margin-left: auto;">Especialidad:</div>
                             <select name="especialidad">
                                     <option value="1">Cardiología</option>
@@ -58,13 +85,7 @@
                                     <option value="9">Ginecología</option>
                                     <option value="10">Urología</option>
                                     <option value="11">Cirugía</option>
-                                </select>                            
-                            <div style="margin-left: auto;">Usuario:</div>
-                            <input type="text" name="usuario" maxlength="20">
-                            <div style="margin-left: auto;">Contraseña:</div>
-                            <input type="password" name="contrasena" maxlength="20">
-                            <div style="margin-left: auto;">Confirmar Contraseña:</div>
-                            <input type="password" name="contrasena2" maxlength="20">
+                            </select>                            
                     </div>
                 <div class="botonRegistro">
                     <input type="submit" value="Registar Médico" class="botonRegistrar">
@@ -84,5 +105,6 @@
                 <tr><td>Perez Aguirre Ian Miztli</td><td>Diseño</td><td>ipereza1702@alumno.ipn.mx</td></tr>            
             </table>
         </footer>
+        <script language="javascript" type="text/javascript" src="./js/validarMedico.js"></script>
     </body>
 </html>
